@@ -1,6 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "description": "Default preset for use with NEU-RO-IT's repos",
+  "description": "Default preset for use with Redwerkz's repos",
   "extends": [
     "config:base"
   ],
