@@ -5,5 +5,11 @@
     "config:base"
   ],
   "dependencyDashboard": true,
-  "includeForks": true
+  "includeForks": true,
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true
+    }
+  ]
 }
