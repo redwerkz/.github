@@ -5,14 +5,18 @@
     "config:base",
     ":pinAllExceptPeerDependencies"
   ],
+  "dependencyDashboard": true,
   "semanticCommitScope": "deps",
   "automergeType": "pr",
   "includeForks": true,
   "packageRules": [
+    { 
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true
+    }
     {
       "matchUpdateTypes": ["major"],
-      "dependencyDashboardApproval": true,
-      "automerge": true
+      "dependencyDashboardApproval": true
     }
   ]
 }
